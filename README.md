@@ -1,5 +1,9 @@
 # pulse-cli
 
+## Pre Setup
+
+In your `.bashrc` or `.zshrc`, add `PULSE_URL`.
+
 ## Build
 
 - `python3 setup.py sdist bdist_wheel`
@@ -13,4 +17,4 @@ Note: change the filepath to latest build.
 
 ## Installation
 
-Install using `pip install git+https://github.com/yourusername/repository.git@v0.3`.
+Install using `pip3 install git+https://github.com/beamlabco/pulse-cli.git@v0.3`.

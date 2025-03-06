@@ -1,9 +1,10 @@
 import os
 import requests
+from dotenv import load_dotenv
 
-from pyaml_env import parse_config
-CONFIG = parse_config(os.path.join(os.getcwd(), 'config.yaml'))
-API_BASE_URL = CONFIG["base_url"]
+load_dotenv()
+
+API_BASE_URL = os.getenv("PULSE_URL")
 
 def get(endpoint, headers={}):
     """Generic GET request"""
