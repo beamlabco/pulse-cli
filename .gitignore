@@ -19,4 +19,49 @@ ENV/
 .ENV/
 
 # PyInstaller
-#  Typically these folders are created when building
+#  Typically these folders are created when building executables with PyInstaller
+dist/
+build/
+
+# .tox, .nox, .coverage, .hypothesis, .pytest_cache
+# Tox, Nox, Coverage, Pytest, Hypothesis and other test-related artifacts
+.tox/
+.nox/
+.coverage
+.coverage.*
+.hypothesis/
+.pytest_cache/
+
+# IDEs and Editors
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Eclipse
+.project
+.pydevproject
+# JetBrains IDEs
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Setuptools / Wheel distribution
+*.tar.gz
+*.whl
+
+# Local configuration files
+*.env
+*.ini
+*.cfg
+*.local
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+config.yaml

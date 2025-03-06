@@ -1,6 +1,9 @@
+import os
 import requests
 
-API_BASE_URL = "https://api.pulse.beamlab.co/v1"
+from pyaml_env import parse_config
+CONFIG = parse_config(os.path.join(os.getcwd(), 'config.yaml'))
+API_BASE_URL = CONFIG["base_url"]
 
 def get(endpoint, headers={}):
     """Generic GET request"""
