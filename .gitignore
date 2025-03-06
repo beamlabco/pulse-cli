@@ -1,0 +1,22 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.dylib
+*.egg
+*.eggs
+dist/
+build/
+*.egg-info/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+.ENV/
+
+# PyInstaller
+#  Typically these folders are created when building
